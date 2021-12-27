@@ -126,6 +126,10 @@ class Window(QtWidgets.QMainWindow):
         algoComp.triggered.connect(self._view.viewComp)
         tasksMenu.addAction(algoComp)
 
+        algoBreadth = QtWidgets.QAction('ЛР №2 - Поиск пути в ширину', self)  # Rina
+        algoBreadth.triggered.connect(self._view.viewBreadth)
+        tasksMenu.addAction(algoBreadth)
+
         # Settings menu
         settingsChangeTheme = QtWidgets.QAction('&Сменить тему', self)
         settingsChangeTheme.triggered.connect(self._changeTheme)

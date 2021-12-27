@@ -51,6 +51,9 @@ class View(QtWidgets.QGraphicsView):
                 editing_graph.removeEdge(tmp)
             self.addGraph(editing_graph)
 
+    def viewBreadth(self):  # Ismi
+        pass
+
     def setDefaults(self):
         for item in self._graph.getVertexList():
             item.setColor(VERTEX_COLOR)
